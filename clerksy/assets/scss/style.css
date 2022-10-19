@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/assets/font/Recoleta-RegularDEMO.otf");
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/assets/font/NotoSans-Regular.ttf");
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: unset;
+    padding: 0 15px;
+  }
+}
+
+.first {
+  background: #163A24;
+}
+
+.header {
+  background: #163A24;
+  padding: 25px 0;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+}
+@media (max-width: 650px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__menu__list {
+  display: flex;
+  align-items: center;
+}
+.header__menu__item {
+  margin-right: 24px;
+}
+.header__menu__link {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #FBFAF7;
+}
+.header__btn {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #FBFAF7;
+  background: #198C36;
+  border-radius: 160px;
+  padding: 15px 25px;
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 650px) {
+  .header__burger {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.intro__wrap {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .intro__wrap {
+    flex-wrap: wrap;
+  }
+}
+.intro__tittle {
+  font-family: "Recoleta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  color: #FBFAF7;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+@media (max-width: 1280px) {
+  .intro__tittle {
+    font-style: 36px;
+    line-height: 40px;
+  }
+}
+.intro__text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FBFAF7;
+}
+@media (max-width: 1280px) {
+  .intro__text {
+    font-style: 16px;
+  }
+}
+.intro__img {
+  width: 738px;
+  height: 580px;
+}
+@media (max-width: 1200px) {
+  .intro__img {
+    height: 360px;
+  }
+  .intro__img img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.second {
+  padding-top: 170px;
+}
+.second__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.second__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 968px) {
+  .second__block {
+    flex-direction: column;
+  }
+}
+.second__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 376px;
+}
+@media (max-width: 965px) {
+  .second__texts {
+    margin-bottom: 30px;
+  }
+}
+.second__tittle {
+  font-family: "Recoleta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  color: #163A24;
+  margin-bottom: 27px;
+}
+@media (max-width: 700px) {
+  .second__tittle {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+.second__text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #163A24;
+}
+@media (max-width: 700px) {
+  .second__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 965px) {
+  .second__img {
+    margin-bottom: 30px;
+  }
+  .second__img:order {
+    order: 0;
+  }
+}
+@media (max-width: 500px) {
+  .second__img {
+    width: 300px;
+    height: 280px;
+  }
+  .second__img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.second__imgs {
+  display: flex;
+  flex-direction: row;
+  padding: 66px 36px;
+  flex-wrap: wrap;
+}
+.second__text1 {
+  text-align: center;
+}
+.second__blab {
+  margin-top: 115px;
+}
+
+.third {
+  background: #163A24;
+}
+.third__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.third__tittle {
+  font-family: "Recoleta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  color: #FBFAF7;
+}
+.third__text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FBFAF7;
+}
+.third__item {
+  text-align: center;
+  display: flex;
+}
+.third__bulb {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
